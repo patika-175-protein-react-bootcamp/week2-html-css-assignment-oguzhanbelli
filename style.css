@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222222;
+
+  max-width: fit-content;
+  min-width: 100%;
+}
+html {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: url("images/image\ 1.png");
+
+  width: 100%;
+  height: 1000px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  position: relative;
+  top: -90px;
+  padding: 20px;
+}
+
+.marvellogo {
+  top: 34%;
+  left: 20px;
+
+  background: url("images/image\ 2.png");
+
+  position: relative;
+
+  width: 500px;
+  height: 300px;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: local;
+  position: relative;
+}
+
+* {
+  transition: 300ms;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  border: 2px solid white;
+  margin-right: 20px;
+  margin-top: 10%;
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(140, 136, 136, 0.2);
+}
+
+section {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  column-gap: 10px;
+}
+
+.image {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  top: -70px;
+  left: 0%;
+  border-top: 1px solid white;
+
+  padding: 7px 0 0px 0;
+
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  max-width: 100%;
+  height: 100%;
+  margin-top: 10vh;
+  width: 100%;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  inline-size: 150px;
+  font-weight: bold;
+  overflow-wrap: break-word;
+  hyphens: manual;
+  bottom: 7%;
+  position: relative;
+  left: 10%;
+}
+.adamWarLock {
+  padding: 50px;
+  background: url("images/image\ 4.png");
+  background-size: cover;
+  background-position: 100%, 100%;
+  background-repeat: no-repeat;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+
+    width: 100% !important;
+    padding: 100px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    flex-direction: row;
+    border: 2px solid white;
+    margin-right: 20px;
+    margin-top: 70% !important;
+    color: white;
+  }
+  header {
+    background-size: contain;
+    height: 400px;
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: local;
+  }
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  .marvellogo {
+    top: 20% !important;
+
+    width: 190px !important;
+    height: 150px !important;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    background: url("images/image\ 1.png");
+
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: local;
+    position: relative;
+    top: -75px;
+  }
+  .card-text {
+    text-align: center;
+    inline-size: 150px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    bottom: 7%;
+    position: relative;
+    left: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+  .marvellogo {
+    top: 15%;
+    left: 20px;
+
+    background: url("images/image\ 2.png");
+
+    position: relative;
+    width: 200px;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: local;
+    position: relative;
+  }
+  .image {
+    width: 90%;
+    padding: 20px;
+    position: relative;
+    top: -70px;
+
+    border-top: 1px solid white;
+
+    padding: 7px 0 0px 0;
+
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 160px;
+    flex-direction: row;
+    border: 2px solid white;
+    margin-right: 20px;
+    margin-top: 20%;
+    color: white;
+  }
+  .container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    max-width: 100%;
+    height: 100%;
+
+    width: 100%;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    background: url("images/image\ 1.png");
+
+    width: 100%;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    position: relative;
+    top: -90px;
+  }
+
+  .marvellogo {
+    top: 40%;
+    left: 20px;
+
+    background: url("images/image\ 2.png");
+
+    position: relative;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: local;
+    position: relative;
+  }
+  .card {
+    width: 300px;
+  }
+  .image {
+    width: 100% !important;
+
+    position: relative;
+    top: -70px;
+
+    border-top: 1px solid white;
+
+    padding: 7px 0 0px 0;
+
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    max-width: 100%;
+    height: 100%;
+    width: 1500px !important;
+  }
+}
